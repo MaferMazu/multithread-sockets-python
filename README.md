@@ -1,27 +1,50 @@
 # 🌟 Multithread Sockets Python
 
-Multithread Sockets in python
+This is the representation of a Client Server behavior using multithreading and multiprocessing in Python.
+
+🧵 Multithread
+
+![multithread.gif](img/multithread.gif)
+
+🔨 Multiprocess
+
+![multiprocess.gif](img/multiprocess.gif)
+
 
 ## 📌 Requirements
 
-- Create a virtual environment
+Python 3.X and Quotes
+
+> To use the `quotes`, a pip library quotes was downloaded, it can be downloaded globally or in a virtual environment. 
+
+> 👁 Note: Client is the only service that uses this library.
+
+### Install quotes globally
+
 ```shell
-python3 -m venv env
+pip install quotes
+```
+
+### If you want to create virtual enviroment
+
+- Create it
+```shell
+python3 -m venv venv
 ```
 
 - Activate it
 
     - Unix/macOS
     ```shell
-    source env/bin/activate
+    source venv/bin/activate
     ```
     
     - Windows
     ```shell
-    ./env\Script\activate
+    ./venv\Script\activate
     ```
 
-- Install requirements
+- Install requirement
 
 ```shell
 pip install quotes
@@ -30,9 +53,9 @@ pip install quotes
 ## 🔥 How to use
 
 
-In one terminal:
+### 📡 Server
 
-- Multithread server
+- 🧵 Multithread server
 ```shell
 python3 server.py multithread
 
@@ -40,16 +63,17 @@ python3 server.py multithread
 
 or
 
-- Multiprocess server
+- 🔨 Multiprocess server
 ```shell
 python3 server.py multiprocess
 
 ```
 
-In other terminal:
+### 👧 Clients
 
 Start clients
 ```shell
-python3 clients.py <number>
+python3 clients.py <number_of_clients>
 
 ```
+Each client sends two messages to the server

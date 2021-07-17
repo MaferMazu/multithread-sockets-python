@@ -1,6 +1,6 @@
+from sys import argv, exit
 from socket import socket
 from threading import Thread
-from sys import argv, exit
 from multiprocessing import Process
 
 new_socket = socket()
@@ -28,7 +28,9 @@ def main(args):
             my_process = Process(target=receive_connection, args=(option, connection, client))
             my_process.start()        
 
+
 def receive_connection(option, connection, client):
+    """Receive Connection"""
     print(f"\n>> {option} server\n   receiving a new connection...")
     while True:
         response = connection.recv(1024)
@@ -37,6 +39,7 @@ def receive_connection(option, connection, client):
         else:
             exit()
     connection.close()
+
 
 if __name__=="__main__":
     main(argv[1:])
