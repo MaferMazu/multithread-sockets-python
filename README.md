@@ -2,18 +2,12 @@
 
 This is the representation of a Client Server behavior using multithreading and multiprocessing in Python.
 
-🧵 Multithread
-
-![multithread.gif](img/multithread.gif)
-
-🔨 Multiprocess
-
 ![multiprocess.gif](img/multiprocess.gif)
-
+🔨 Example with multiprocess server
 
 ## 📌 Requirements
 
-Python 3.X and Quotes
+Python 3 and Quotes
 
 > To use the `quotes`, a pip library quotes was downloaded, it can be downloaded globally or in a virtual environment. 
 
